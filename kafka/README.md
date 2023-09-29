@@ -1,0 +1,16 @@
+- Kafka: Mensageria de logs de eventos, com consultas por offset das keys das partições
+- ksqlDB ou Streams: Camada acima do kafka para pesquisas avançadas
+- Producer: Gerador de mensagens
+- Topic: Assunto do tipo de informação enviada, podendo ser uma simples mensagem ou um dado completo
+- Broker: Máquinas para armazenamento de partições
+- Partition: Alocamento de espaço para armazenar informações
+- Factor Replication: Quantidade de réplicas de partições em broker
+- Garantia de entrega (Akc): Akc-0, Akc-1, Ack-all, distribuição de persistência
+- Leadership partition: Partição prioritária para leitura
+- Flower partition: Partição reservas para armazenar e ler dados
+- Customer Group: Máquinas consumidoras de informações das partições
+- Control center: Ferramenta para gerenciamento de cluster kafka
+- Schema Register: Formatação e tipagem da mensagem
+
+- Kafka Consumer: kafka-console-consumer --bootstrap-server=localhost:9092 --topic=sales --from-beginning
+- Kafka Producer: kafka-console-producer --boostratp-server=localhost:9092 --topic=sales
